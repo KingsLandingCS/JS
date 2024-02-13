@@ -16,17 +16,16 @@
 
         function myDisplayer(some) {
 
-            console.log(some);;
+            document.getElementById("demo").innerHTML = some;
         }
 
         function myCalculator(num1, num2) {
 
             let sum = num1 + num2;
-            return sum;
+            myDisplayer(sum);
         }
 
-        let result = myCalculator(5, 5);
-        myDisplayer(result);
+        myCalculator(5, 5);
 
     </script>
 
