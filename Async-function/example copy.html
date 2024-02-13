@@ -13,11 +13,14 @@
 
     <script>
 
-        setTimeout(myFunction, 3000);
+        setTimeout(function () {
 
-        function myFunction() {
+            myFunction("I love you !!!");
+        }, 3000);
 
-            document.getElementById("demo").innerHTML = "I love you!";
+        function myFunction(value) {
+
+            document.getElementById("demo").innerHTML = value;
         }
 
     </script>
