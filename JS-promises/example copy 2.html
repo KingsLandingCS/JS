@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="my-button">My Button</button>
+
+
+    <script>
+
+        const myButton = document.querySelector(".my-button");
+
+        function waitForUserInteraction() {
+
+            return new Promise(resolve => {
+
+                myButton.addEventListener("click", () => {
+
+                    resolve("User Clicked the button");
+                });
+            });
+
+        }
+
+        waitForUserInteraction().then(message => {
+
+            console.log(message);
+        })
+
+    </script>
+
+</body>
+
+</html>
