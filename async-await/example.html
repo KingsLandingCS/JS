@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        console.log("Start");
+
+        function getName(name, callbackFn) {
+
+            setTimeout(() => {
+
+                console.log("inside Name setTimeout");
+                callbackFn(name);
+            }, 2000)
+        }
+
+        function getHobbies(name, callbackFn) {
+
+            setTimeout(() => {
+
+                console.log("inside Hobbies setTimeout");
+                callbackFn(["programming", "books", "fitness"]);
+            }, 1000)
+        }
+
+        const nm = getName("Sonam", (nm) => {
+            console.log(nm);
+            getHobbies(nm, (hobby) => { console.log(hobby); })
+        });
+        console.log("End");
+    </script>
+
+</body>
+
+</html>
