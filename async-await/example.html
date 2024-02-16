@@ -11,31 +11,23 @@
 
     <script>
 
-        console.log("Start");
 
-        function getName(name, callbackFn) {
+        const promisObj1 = new Promise((resolve, reject) => {
 
-            setTimeout(() => {
+            let req = false;
+            if (req == true) {
 
-                console.log("inside Name setTimeout");
-                callbackFn(name);
-            }, 2000)
-        }
+                resolve([1, 2, 3, 4, 5]);
+            } else {
 
-        function getHobbies(name, callbackFn) {
+                reject("Request Rejected")
+            }
+        }).then(
 
-            setTimeout(() => {
+            (value) => { console.log(value) },
+            // (error) => { console.log(error) }
+        ).catch((error) => { console.log(error) })
 
-                console.log("inside Hobbies setTimeout");
-                callbackFn(["programming", "books", "fitness"]);
-            }, 1000)
-        }
-
-        const nm = getName("Sonam", (nm) => {
-            console.log(nm);
-            getHobbies(nm, (hobby) => { console.log(hobby); })
-        });
-        console.log("End");
     </script>
 
 </body>
