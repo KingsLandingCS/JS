@@ -11,6 +11,9 @@ input1.setAttribute("type", "text");
 input1.setAttribute("name", "fname");
 input1.setAttribute("placeholder", "First Name");
 input1.style.marginBottom = "10px";
+input1.addEventListener("focus", function () {
+    input1.style.borderColor = "grey";
+});
 form.appendChild(input1);
 
 const label2 = document.createElement("label");
@@ -23,6 +26,9 @@ input2.setAttribute("type", "text");
 input2.setAttribute("name", "lname");
 input2.setAttribute("placeholder", "Last Name");
 input2.style.marginBottom = "10px";
+input2.addEventListener("focus", function () {
+    input2.style.borderColor = "grey";
+});
 form.appendChild(input2);
 
 const submitButton = document.createElement("input");
