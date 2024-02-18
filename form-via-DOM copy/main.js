@@ -12,7 +12,7 @@ input1.setAttribute("name", "fname");
 input1.setAttribute("placeholder", "First Name");
 input1.style.marginBottom = "10px";
 input1.addEventListener("focus", function () {
-    input1.style.borderColor = "grey";
+    input1.style.borderColor = "blue";
 });
 form.appendChild(input1);
 
@@ -27,7 +27,7 @@ input2.setAttribute("name", "lname");
 input2.setAttribute("placeholder", "Last Name");
 input2.style.marginBottom = "10px";
 input2.addEventListener("focus", function () {
-    input2.style.borderColor = "grey";
+    input2.style.borderColor = "blue";
 });
 form.appendChild(input2);
 
