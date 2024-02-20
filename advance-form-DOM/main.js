@@ -40,7 +40,7 @@ var formContainer = document.querySelector(".form-container");
 formContainer.appendChild(form);
 
 // Form validation
-form.addEventListener("submit", function (event) {
+function handleFormSubmit(event) {
     var nameValue = nameInput.value.trim();
     var emailValue = emailInput.value.trim();
     var passwordValue = passwordInput.value;
@@ -78,7 +78,9 @@ form.addEventListener("submit", function (event) {
             errorContainer.appendChild(errorElement);
         });
     }
-});
+}
+
+form.addEventListener("submit", handleFormSubmit);
 
 // Email validation helper function
 function isValidEmail(email) {
