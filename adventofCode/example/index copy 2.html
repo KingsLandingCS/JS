@@ -10,16 +10,15 @@
 <body>
 
     <script>
+
         function getNumb(input) {
 
             let newArr = input.split("").filter((character) => !isNaN(parseInt(character)));
 
             return [newArr.at(0), newArr.at(-1)];
-
         }
 
-        console.log(getNumb("a1b2c3d4e5f"));
-
+        console.log(getNumb("treb7uchet"));
 
     </script>
 
