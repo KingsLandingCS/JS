@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#formContainer {}
+
+#myForm {}
+
+label[for=nationality] {
+
+    display: block;
+    margin: 10px 0;
+}
+
+label[for=gender] {
+
+    display: block;
+    margin: 10px 0;
+}
+
+label[for=summary] {
+
+    display: block;
+    margin: 10px 0;
+}
+
+input[type=text] {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type=radio] {
+
+    display: inline-block;
+}
+
+textarea {
+
+    display: block;
+    margin: 10px 0;
+}

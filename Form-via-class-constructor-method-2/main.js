@@ -31,6 +31,8 @@ class Form {
 
     }
 
+
+    // addRadioInputField
     addRadioInputField(type, name, id, value) {
 
         let input = document.createElement("input");
@@ -130,16 +132,22 @@ myForm.addOptionElement("UK");
 
 // Gender
 myForm.addLabelTag("gender", " Select your gender");
-myForm.addLabelTag("gender", " Male");
-myForm.addRadioInputField("radio", "Male", "male", "male");
-myForm.addLabelTag("gender", " Female");
-myForm.addInputField("radio", "Female", "Female", "Female");
-myForm.addLabelTag("gneder", " Neutral");
-myForm.addInputField("radio", "Neutral", "Neutral", "Neutral");
+
+myForm.addRadioInputField("radio", "gender", "male", "male");
+myForm.addLabelTag("male", " Male");
+myForm.addInputField("radio", "gender", "female", "female");
+myForm.addLabelTag("female", " Female");
+myForm.addInputField("radio", "gender", "neutral", "neutral");
+myForm.addLabelTag("neutral", " Neutral");
 
 
 // textarea
-myForm.addTextAreaField("summary", "summary", "4")
+myForm.addLabelTag("summary", " summary");
+myForm.addTextAreaField("summary", "summary", "4");
+
+
+// submitbutton
+myForm.addSubmitButton("submit", "submit");
 
 
 
