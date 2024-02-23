@@ -6,9 +6,18 @@
 
 
 
-#formContainer {}
+#formContainer {
+    display: flex;
+    justify-content: center;
+}
 
-#myForm {}
+#myForm {
+
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 label[for=nationality] {
 
@@ -35,7 +44,8 @@ input[type=text] {
 
 input[type=radio] {
 
-    display: inline-block;
+    display: flex;
+    
 }
 
 textarea {
