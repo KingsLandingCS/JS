@@ -8,6 +8,7 @@
 #formContainer {
     display: flex;
     justify-content: center;
+
 }
 
 #myForm {
@@ -16,6 +17,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: rgb(240, 237, 237);
+    padding: 8px;
 }
 
 label[for=nationality] {
@@ -27,7 +30,7 @@ label[for=nationality] {
 label[for=gender] {
 
     display: block;
-    margin: 10px 0;
+    margin: 10px 0 6px 0;
 }
 
 label[for=summary] {
@@ -44,11 +47,27 @@ input[type=text] {
 input[type=radio] {
 
     width: 35px;
-    margin: 6px 0;
+    margin: 3px 0;
 }
 
 textarea {
 
     display: block;
     margin: 10px 0;
+}
+
+input[type=submit] {
+
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(92, 192, 25);
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+
+    background-color: rgb(75, 156, 21);
 }
