@@ -5,7 +5,6 @@
 }
 
 
-
 #formContainer {
     display: flex;
     justify-content: center;
@@ -44,8 +43,8 @@ input[type=text] {
 
 input[type=radio] {
 
-    display: flex;
-    
+    width: 35px;
+    margin: 6px 0;
 }
 
 textarea {
