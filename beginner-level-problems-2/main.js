@@ -15,6 +15,6 @@ function myFunction(value) {
 let userInput = prompt("Please enter number:", 7);
 
 
-console.log(myFunction(userInput));
+alert(myFunction(userInput));
 
 
