@@ -1,30 +1,27 @@
-function calcFactorial(n) {
+function calcFn(n) {
 
-    if (n < 0) {
+    let sum = 0;
+    for (let i = 0; i <= n; i++) {
 
-        return "unable to calculate";
+        sum += i; // Accumulate the sum
     }
 
-    else if (n === 0 || n === 1) {
-
-        return 1;
-    }
-    else {
-
-        return n * calcFactorial(n - 1);
-    }
-
+    return sum;
 }
 
-let userInput = prompt("Enter your number");
+let userInput = prompt("Enter the number");
 let number = parseInt(userInput);
+
 
 if (!isNaN(number)) {
 
-    alert(calcFactorial(number));
+    alert(calcFn(userInput));
+
 }
+
 
 else {
 
-    alert("Not a Number");
+    alert(NaN);
+
 }
