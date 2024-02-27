@@ -13,8 +13,6 @@ function myFunction(value) {
 }
 
 let userInput = prompt("Please enter number:", 7);
-let number = parseInt(userInput);
-
 
 
 console.log(myFunction(userInput));
