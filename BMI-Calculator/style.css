@@ -1,0 +1,60 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bmi-container {
+
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction: column;
+    background: rgb(240, 237, 237);
+   
+}
+
+.bmi-container div {
+
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+}
+
+.bmi-container div label {
+
+    margin-right: 15px;
+}
+
+
+.bmi-container div:nth-of-type(1) label {
+
+    margin-right: 31px;
+}
+
+.bmi-container label{
+
+    text-align: left;
+}
+
+.bmi-container .calc-button{
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    background: rgb(16, 197, 16);
+    border-radius: 4px;
+}
+
+.bmi-container .calc-button:hover{
+
+    background: rgb(14, 167, 14);
+}
