@@ -7,12 +7,6 @@ function countDownToZero(n) {
 }
 
 let userInput = prompt("Enter a number");
-let number = parseInt(userInput);
 
-if (!isNaN(number)) {
-    alert(countDownToZero(number));
-}
 
-else {
-    alert("NaN");
-}
+countDownToZero(userInput);
