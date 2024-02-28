@@ -3,26 +3,21 @@ const randomNumber = Math.floor(Math.random() * 100) + 1;
 
 function startGame() {
 
-    let userInput;
+    let userInput = prompt("Your Guess?");
 
-    while (randomNumber !== userInput) {
+    if (userInput > randomNumber) {
 
-        userInput = prompt("What is your guess?");
-
-        if (userInput < randomNumber) {
-
-            alert("too low");
-        }
-
-        else if (userInput > randomNumber) {
-
-            alert("Too high");
-        }
-
+        alert("Too high");
+        startGame();
     }
 
-    alert("Congrats! Guess is correct!")
+    else if (userInput < randomNumber) {
 
+        alert("Too low");
+        startGame();
+    }
+
+    alert("Congrats! You won!");
 }
 
 startGame();
