@@ -1,7 +1,3 @@
-// let userWeight = prompt("Your weight");
-
-// let userHeight = prompt("Your height");
-
 const calcBtn = document.querySelector(".calc-button");
 
 
