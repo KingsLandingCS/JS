@@ -1,0 +1,47 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100VH;
+}
+
+
+.guess-number {
+
+    border: 1px solid black;
+    height: 200px;
+    width: 450px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background: rgb(236, 232, 232);
+}
+
+
+.guess-game {
+
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(9, 196, 9);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.guess-game:hover {
+
+    background: rgb(9, 167, 9);
+}
