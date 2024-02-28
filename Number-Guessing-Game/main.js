@@ -9,14 +9,14 @@ function guessNumber() {
 
         userInput = prompt("Your guess?");
 
-        if (userInput > randomNumber) {
-
-            alert("Too high");
-        }
-
-        else if (userInput < randomNumber) {
+        if (userInput < randomNumber) {
 
             alert("Too low");
+        }
+
+        else if (userInput > randomNumber) {
+
+            alert("Too high");
         }
     }
 

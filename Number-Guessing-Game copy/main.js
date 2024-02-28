@@ -11,7 +11,7 @@ function startGame() {
 
         if (userInput < randomNumber) {
 
-            alert("Input is too low");
+            alert("too low");
         }
 
         else if (userInput > randomNumber) {
