@@ -1,49 +1,65 @@
+const checkGrade = document.querySelector(".check-grade");
+
+
+
 function calcGrade(n) {
 
-    if (n >= 90 && n <= 100) {
+    if (n === null) {
 
-        return "A";
+        alert("cancelled");
+        return;
+    }
+
+    else if (isNaN(n)) {
+
+        alert("Please enter a valid number");
+        return
+    }
+
+
+    else if (n >= 90 && n <= 100) {
+
+        alert("A");
     }
 
     else if (n >= 80 && n < 90) {
 
-        return "B"
+        alert("B");
     }
 
     else if (n >= 70 && n < 80) {
 
-        return "C"
+        alert("C");
     }
 
     else if (n >= 60 && n < 70) {
 
-        return "D"
+        alert("D");
     }
 
     else if (n >= 50 && n < 60) {
 
-        return "E"
+        alert("E");
     }
 
     else if (n >= 0 && n < 50) {
 
-        return "F"
+        alert("F");
     }
 
     else {
 
-        return "Invalid Percentage";
+        alert("Invalid Percentage");
     }
 }
 
-let yourPercentage = prompt("Enter your percentage:", 78);
+checkGrade.addEventListener("click", function () {
 
-if (!isNaN(yourPercentage)) {
+    let yourPercentage = prompt("Enter your percentage:");
 
-    alert(calcGrade(yourPercentage));
-}
+    calcGrade(yourPercentage);
+})
 
-else {
 
-    alert("Please enter valid Percentage");
-}
+
+

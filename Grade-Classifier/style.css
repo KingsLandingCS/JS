@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grade-main-container {
+
+    border: none;
+    border-radius: 8px;
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    background: rgb(4, 71, 57);
+}
+
+.grade-main-container h1{
+
+    color:#fff;
+}
+
+.grade-main-container button {
+
+    margin-top: 20px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgb(4, 180, 4);
+    cursor: pointer;
+    color: #fff;
+}
+
+.grade-main-container button:hover{
+
+    background: rgb(4, 151, 4);
+}
