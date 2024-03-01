@@ -4,16 +4,14 @@ const checkBtn = document.querySelector(".check");
 function myFunction(value) {
 
 
-    value = parseInt(value);
+    if (value === null) {
+        alert("UserInput is empty");
+        return;
+    }
 
     if (isNaN(value)) {
 
         alert("UserInput is not a number");
-        return;
-    }
-
-    if (value <= 0) {
-        alert("UserInput is either zero or below zero");
         return;
     }
 
@@ -32,7 +30,7 @@ checkBtn.addEventListener("click", function () {
 
     let userInput = prompt("Please enter number:");
 
-    alert(myFunction(userInput));
+    myFunction(userInput);
 
 });
 
