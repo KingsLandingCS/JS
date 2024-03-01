@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+
+    height: 200px;
+    width: 350px;
+    background: rgb(5, 42, 85);
+    text-align: center;
+    padding: 15px;
+}
+
+.main-container h1 {
+
+    color: #fff;
+}
+
+.main-container button {
+
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background: rgb(7, 59, 119);
+    color: #fff;
+}
+
+.main-container button:hover {
+
+    background: rgb(6, 51, 102);
+}
