@@ -1,12 +1,33 @@
-const numbers = [3, 6, 2, 9, 1];
+const people = [
 
-const sum = numbers.reduce((p, c) => {
+    {
+        name: "Dom Perry",
+        age: 35
+    },
 
-    console.log(`Previous: ${p}`);
-    console.log(`Current: ${c}`);
+    {
+        name: "Andrew Wilksons",
+        age: 47
+    },
 
-    return p + c;
+    {
+        name: "Brian Walker",
+        age: 27
+    }
+
+];
+
+
+const oldestAge = people.reduce((p, c) => {
+
+    if (c.age > p) {
+
+        return c.age;
+    }
+
+    return p;
 
 }, 0);
 
-console.log(sum);
+
+console.log(oldestAge);
