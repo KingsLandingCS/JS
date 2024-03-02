@@ -12,7 +12,7 @@ const largestNumber = numbers.reduce((accumulator, currentValue) => {
 
         return accumulator;
     }
-});
+}, 0);
 
 
 console.log("The largest number is:", largestNumber);
