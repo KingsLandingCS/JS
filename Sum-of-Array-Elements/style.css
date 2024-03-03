@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+
+    background: rgb(16, 4, 70);
+    text-align: center;
+    padding: 18px;
+}
+
+.main-container h1 {
+
+    color: #fff;
+}
+
+.main-container button {
+
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: rgb(26, 6, 112);
+    color: #fff;
+}
+
+.main-container button:hover{
+
+    background: rgb(30, 7, 133);
+}
