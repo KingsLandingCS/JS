@@ -1,24 +1,23 @@
-const checkOddValue = document.querySelector(".check");
+const reverseAnArray = document.querySelector(".check");
 
 
-function countOddNumbers(arr) {
+function reverseArray(arr) {
 
-    const oddNumbers = arr.filter((num) => {
+    const reversedArray = arr.map(Number).reverse();
 
-        return num % 2 !== 0;
-    });
-
-    return oddNumbers;
+    return reversedArray;
 
 }
 
 
-checkOddValue.addEventListener("click", function () {
+
+
+reverseAnArray.addEventListener("click", function () {
 
 
     let userInput = prompt("Enter an array");
     let newArr = userInput.split(",").map(Number);
 
-    alert(countOddNumbers(newArr));
+    alert(reverseArray(newArr));
 
 });
