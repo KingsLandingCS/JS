@@ -1,34 +1,37 @@
-const checkMinValue = document.querySelector(".check");
+const checkAvgValue = document.querySelector(".check");
 
 
-function minimumValue(newArr) {
 
-    const minVal = newArr.reduce((accumulator, currentValue) => {
 
-        if (currentValue < accumulator) {
+function calculateAverage(newArr) {
 
-            return currentValue;
-        }
+    if (!Array.isArray(newArr) || newArr.length === 0) {
 
-        else {
+        return 0;
+    }
 
-            return accumulator;
-        }
+    const sum = newArr.reduce((accumulator, currentValue) => {
 
-    }, Infinity);
+        return accumulator + currentValue;
 
-    return minVal;
-    
+    }, 0);
+
+    const average = sum / newArr.length;
+
+
+    return average;
+
 }
 
 
-checkMinValue.addEventListener("click", function () {
+
+
+
+checkAvgValue.addEventListener("click", function () {
 
 
     let userInput = prompt("Enter an array");
     let newArr = userInput.split(',').map(Number);
 
-    alert(minimumValue(newArr));
-
-
+    alert(calculateAverage(newArr));
 });
