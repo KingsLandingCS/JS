@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+
+    background: rgb(3, 167, 3);
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-container h1 {
+
+    color: #fff;
+}
+
+.main-container button {
+
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: rgb(3, 129, 3);
+    color: #fff;
+}
+
+.main-container button:hover {
+
+    background: rgb(4, 99, 4);
+}
