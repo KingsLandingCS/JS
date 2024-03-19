@@ -1,9 +1,3 @@
-let a = 5;
-let b = 4;
+let name = "Kings";
 
-function myFun(say) {
-
-    return say;
-}
-
-console.log(`${a+b } ${myFun("hello")} world`);
+console.log(`Your Name is : ${str}`);
