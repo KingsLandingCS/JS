@@ -102,6 +102,46 @@ let partyEvent = function () {
         partytime = new Date().getHours();
         partyTimeButton.innerText = "Party Over!";
         partTimeButton.style.backgroundColor = "#0A8DAB";
-    }
-}
 
+    } else {
+        partyTime = -1;
+        partyTimeButton.innerText = "Party Time";
+        partyTimeButton.style.backgroundColor = "#222";
+    }
+};
+
+partyButton.addEventListener("Click", partyEvent);
+partyEvent();
+
+
+//Activates Wake-Up selector
+let wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+let wakeUpEvent = function () {
+
+    wakeUpTime = wakeUpTimeSelector.value;
+};
+
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+
+
+// Activates Lunch Selector
+let lunchTimeSelector = document.getElementById("lunchTimeSelector");
+
+let lunchEvent = function () {
+
+    lunchTime = lunchTimeSelector.value;
+};
+
+lunchTimeSelector.addEventListener("change", lunchEvent);
+
+
+//Activates Nap-Time selector
+
+let napTimeSelector = document.getElementById("napTimeSelector");
+
+let napEvent = function () {
+
+    naptime = napTimeSelector.value;
+};
+
+napTimeSelector.addEventListener("change", napEvent);
